@@ -45,7 +45,7 @@ const OtpInput = ({ value, onChange }) => {
   );
 };
 
-const ForgotPassword = () => {
+function ForgotPassword() {
   const [email, setEmail] = useState("");
   const [resetCode, setResetCode] = useState("");
   const [newPassword, setNewPassword] = useState("");
@@ -317,6 +317,6 @@ const ForgotPassword = () => {
       </div>
     </div>
   );
-};
+}
 
 export default ForgotPassword;

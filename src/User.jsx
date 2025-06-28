@@ -13,7 +13,7 @@ import {
 //Lazy Load Pages
 const Signup = lazy(() => import("./Components/User/Signup"));
 const Login = lazy(() => import("./Components/User/Login"));
-const ForgetPassword = lazy(() => import("./Components/User/forgetPassword"));
+const ForgetPassword = lazy(() => import("./Components/User/ForgetPassword"));
 const ProductPage = lazy(() => import("./pages/User/ProductPage"));
 const ShopPage = lazy(() => import("./pages/User/ShopPage"));
 const HomePage = lazy(() => import("./pages/User/HomePage"));
