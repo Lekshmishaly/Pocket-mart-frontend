@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import axiosInstance from "@/Utils/AxiosConfig";
 import { Plus, Minus, X, PackageX } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "../ui/Button";
 import Pagination from "@/Utils/Pagination";
 
 export default function Shop({ search }) {
