@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Button } from "@/Components/ui/Button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/Components/ui/Input";
+import { Label } from "@/Components/ui/Label";
+import { Textarea } from "@/Components/ui/Textarea";
 import { toast } from "sonner";
 import { validateEditCategory } from "@/Utils/ValidationFunctions";
 import axiosInstance from "@/Utils/AxiosConfig";

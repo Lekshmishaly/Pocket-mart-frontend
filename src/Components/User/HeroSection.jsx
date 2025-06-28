@@ -5,7 +5,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/Components/ui/Carousel";
 import Autoplay from "embla-carousel-autoplay";
 import banner_img1 from "../../assets/banner1.webp";
 

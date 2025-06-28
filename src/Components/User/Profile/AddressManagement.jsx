@@ -12,7 +12,7 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
+} from "@/Components/ui/Alert-dialog";
 import axiosInstance from "@/Utils/AxiosConfig";
 import { validateAddress } from "@/Utils/ValidationFunctions";
 import countries from "world-countries";

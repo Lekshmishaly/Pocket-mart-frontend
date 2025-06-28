@@ -3,7 +3,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+} from "@/Components/ui/Collapsible";
 import { ChevronDown, ChevronUp, Slash } from "lucide-react";
 import SizeGuideModal from "./SizeGuideModal";
 import axiosInstance from "@/Utils/AxiosConfig";

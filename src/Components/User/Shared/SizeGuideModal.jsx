@@ -4,8 +4,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+} from "@/Components/ui/Dialog";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/ui/Tabs";
 
 export default function SizeGuideModal() {
   const sizeData = [

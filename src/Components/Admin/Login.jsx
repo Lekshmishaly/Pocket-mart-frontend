@@ -1,6 +1,6 @@
 import { Label } from "@radix-ui/react-label";
 import React, { useState } from "react";
-import { Input } from "../ui/input";
+import { Input } from "../ui/Input";
 import { EyeIcon, EyeOffIcon } from "lucide-react";
 import { Button } from "@/Components/ui/Button";
 import { toast } from "sonner";

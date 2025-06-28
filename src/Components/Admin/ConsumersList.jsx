@@ -14,7 +14,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from "@/Components/ui/Table";
 import Pagination from "@/Utils/Pagination";
 
 export default function ConsumersList() {

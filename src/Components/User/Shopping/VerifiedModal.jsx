@@ -12,7 +12,7 @@ import {
   TableBody,
   TableRow,
   TableCell,
-} from "@/Components/ui/table";
+} from "@/Components/ui/Table";
 import { Button } from "@/Components/ui/Button";
 import { useNavigate } from "react-router-dom";
 
