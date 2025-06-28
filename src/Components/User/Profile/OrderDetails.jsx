@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "sonner";
-import OrderReturn from "../Shared/orderReturn";
+import OrderReturn from "../Shared/OrderReturn";
 
 function OrderDetails() {
   const userData = useSelector((store) => store.user.userDetails);
