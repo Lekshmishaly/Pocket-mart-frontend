@@ -2,7 +2,7 @@ import { Label } from "@radix-ui/react-label";
 import React, { useState } from "react";
 import { Input } from "../ui/input";
 import { EyeIcon, EyeOffIcon } from "lucide-react";
-import { Button } from "@/Components/ui/button";
+import { Button } from "@/Components/ui/Button";
 import { toast } from "sonner";
 import videoLogo from "../../assets/POCKET.mp4";
 import axiosInstance from "../../Utils/AxiosConfig";

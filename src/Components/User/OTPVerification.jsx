@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Button } from "@/Components/ui/button";
+import { Button } from "@/Components/ui/Button";
 import { Input } from "../ui/input";
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../ui/dialog";

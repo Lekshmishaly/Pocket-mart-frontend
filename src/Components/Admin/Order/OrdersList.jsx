@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { toast } from "sonner";
 import ConfirmationModal from "@/Components/Admin/Shared/ConfirmationModal";
 import { AlertCircle, FolderX } from "lucide-react";
-import { Button } from "@/Components/ui/button";
+import { Button } from "@/Components/ui/Button";
 import ConfirmationModalwithButtons from "../Shared/ConfirmationModalwithButtons";
 import Pagination from "@/Utils/Pagination";
 
