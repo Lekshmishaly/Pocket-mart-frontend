@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "@/Components/ui/Button";
+import { Button } from "@/Components/ui/button";
 
 import { Link, useNavigate } from "react-router-dom";
 import { Loader2, EyeIcon, EyeOffIcon } from "lucide-react";

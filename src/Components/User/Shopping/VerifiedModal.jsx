@@ -13,7 +13,7 @@ import {
   TableRow,
   TableCell,
 } from "@/Components/ui/table";
-import { Button } from "@/Components/ui/Button";
+import { Button } from "@/Components/ui/button";
 import { useNavigate } from "react-router-dom";
 
 function VerifiedModal({ isModalOpen, onExit, order }) {

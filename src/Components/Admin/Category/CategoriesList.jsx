@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button } from "@/Components/ui/Button";
+import { Button } from "@/Components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { NotebookPen, Plus } from "lucide-react";
 import axiosInstance from "@/Utils/AxiosConfig";
