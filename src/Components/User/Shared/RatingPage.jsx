@@ -44,7 +44,7 @@ function RatingPage() {
         productId: productId,
         rating,
         review: review,
-      });
+      }, { withCredentials: true });
 
       setReload(true);
       setShowThankYou(true);
