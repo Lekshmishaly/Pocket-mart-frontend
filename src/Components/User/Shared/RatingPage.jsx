@@ -29,6 +29,9 @@ function RatingPage() {
       if (!rating && review) {
         return toast.error("Please provide a rating before submitting!");
       }
+      if (rating && (!review || review.trim() === "")) {
+        return toast.error("Please enter a valid review comment.");
+      }
 
       const response = await axiosInstance.post("/user/product/review", {
         userId: userData._id,
@@ -36,13 +39,13 @@ function RatingPage() {
         rating,
         review: review,
       });
+
       setReload(true);
-      //   toast.success(response.data);
       setShowThankYou(true);
       setReview("");
       setRating(0);
     } catch (error) {
-      console.error("Error checking for  adding Review:", error);
+      console.error("Error checking for adding Review:", error);
     }
   }
 

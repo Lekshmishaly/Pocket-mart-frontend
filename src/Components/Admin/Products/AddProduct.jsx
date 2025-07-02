@@ -70,6 +70,7 @@ export default function AddProduct() {
     try {
       const response = await axiosInstance.get("/admin/categories");
       setCategories(response.data.categoryData);
+      console.log("answer::", response.data.categoryData);
     } catch (error) {
       console.log(error);
       if (error.response) {
