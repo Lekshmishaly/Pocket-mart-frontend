@@ -33,6 +33,12 @@ function RatingPage() {
         return toast.error("Please enter a valid review comment.");
       }
 
+      console.log({
+        userId: userData._id,
+        productId: productId,
+        rating,
+        review,
+      });
       const response = await axiosInstance.post("/user/product/review", {
         userId: userData._id,
         productId: productId,
