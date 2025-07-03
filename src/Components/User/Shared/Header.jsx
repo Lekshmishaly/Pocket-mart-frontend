@@ -187,7 +187,7 @@ export default function Header({ name }) {
                 </Button>
               </SheetTrigger>
 
-              <SheetContent className="bg-[#f4ede3]">
+              <SheetContent className="bg-[#e0d7cb]">
                 <nav className="flex flex-col space-y-4 mt-8">
                   <SheetTitle></SheetTitle>
 
@@ -197,14 +197,14 @@ export default function Header({ name }) {
                       onClick={() =>
                         navigate(label === "Home" ? "/" : "/shop-page")
                       }
-                      className="text-sm sm:text-xs max-[400px]:text-[9px] max-[320px]:text-[7.5px] text-[#8b5d4b] font-thin border-b-2 border-transparent hover:border-[#8b5d4b] transition-colors duration-300">
+                      className="text-sm sm:text-xs max-[400px]:text-[12px] max-[320px]:text-[7.5px] text-[#a44723] font-thin border-b-2 border-transparent hover:border-[#8b5d4b] transition-colors duration-300">
                       {label}
                     </div>
                   ))}
 
                   <div
                     onClick={handleUserLogout}
-                    className="text-sm sm:text-xs max-[400px]:text-[9px] max-[320px]:text-[7.5px] text-[#8b5d4b] font-thin border-b-2 border-transparent hover:border-[#8b5d4b] transition-colors duration-300">
+                    className="text-sm sm:text-xs max-[400px]:text-[12px] max-[320px]:text-[7.5px] text-[#a44723] font-thin border-b-2 border-transparent hover:border-[#8b5d4b] transition-colors duration-300">
                     Logout
                   </div>
                 </nav>
