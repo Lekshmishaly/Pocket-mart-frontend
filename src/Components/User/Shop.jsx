@@ -341,7 +341,7 @@ export default function Shop({ search }) {
           <div
             className="grid grid-cols-2 
                   [@media(min-width:768px)]:grid-cols-3 
-                  gap-6 xl:gap-8 2xl:gap-10">
+                  gap-6 xl:gap-8 2xl:gap-10 mx-4">
             {Array.isArray(products) && products.length > 0 ? (
               products.map((product) => (
                 <ProductCard key={product._id} product={product} />
