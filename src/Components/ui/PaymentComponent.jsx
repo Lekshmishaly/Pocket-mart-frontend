@@ -12,6 +12,7 @@ const PaymentComponent = ({ amount, onSuccess, onFailure, address, title }) => {
 
     const options = {
       key: import.meta.env.VITE_RAZORPAY_KEY_ID,
+      key_secret: import.meta.env.VITE_RAZORPAY_SECRET_ID,
       amount: amount * 100,
       currency: "INR",
       name: "Test Company",
