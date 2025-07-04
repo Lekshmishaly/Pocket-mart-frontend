@@ -29,10 +29,12 @@ const PaymentComponent = ({ amount, onSuccess, onFailure, address, title }) => {
           onFailure();
         },
       },
+      callback_url: "https://your-backend-domain.com/api/user/payment/verify", // ✅ For mobile
+
       prefill: {
-        name: "John Doe",
-        email: "john.doe@example.com",
-        contact: "9999999999",
+        name: "Lekshmi Shaly",
+        email: "lekshmishaly683@gmail.com",
+        contact: "9037695239",
       },
       theme: {
         color: "#8b5d4b",
