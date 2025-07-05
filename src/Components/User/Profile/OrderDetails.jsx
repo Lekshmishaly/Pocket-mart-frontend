@@ -373,6 +373,79 @@ function OrderDetails() {
           </div>
         </div>
       </div>
+
+      {/* Reason Selection Popup */}
+      {showReasonPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-[#d0c4b5] p-6 rounded-lg shadow-lg max-w-md w-full">
+            <h2 className="text-[#955238] text-lg font-semibold mb-4 text-center">
+              Select Cancellation Reason
+            </h2>
+            <div className="space-y-3 max-h-60 overflow-y-auto mb-6">
+              {[
+                "Ordered by Mistake",
+                "Found a Better Deal",
+                "Delivery Taking Too Long",
+                "Change of Mind",
+                "Wrong Size/Color Chosen",
+                "Payment Issues",
+                "Product Reviews/Feedback",
+                "Quality Concerns",
+                "Damaged Product",
+              ].map((reason) => (
+                <div
+                  key={reason}
+                  className={`p-3 border rounded-md cursor-pointer transition-colors duration-200 ${
+                    selectedReason === reason
+                      ? "bg-[#b98a78] text-white border-[#713d28]"
+                      : "bg-[#ece3d9] text-[#8b5d4b] border-[#d4c9bc] hover:bg-[#e8dac8]"
+                  }`}
+                  onClick={() => setSelectedReason(reason)}>
+                  {reason}
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-end space-x-4">
+              <button
+                onClick={() => setShowReasonPopup(false)}
+                className="px-4 py-2 bg-[#ece3d9] text-[#8b5d4b] rounded hover:bg-[#e8dac8] transition-colors duration-200">
+                Cancel
+              </button>
+              <button
+                onClick={proceedToConfirmation}
+                className="px-4 py-2 bg-[#955238] text-white rounded hover:bg-[#713d28] transition-colors duration-200">
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Confirmation Popup */}
+      {showConfirmation && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-[#d0c4b5] p-6 rounded-lg shadow-lg max-w-sm w-full">
+            <h2 className="text-[#8b5d4b] text-lg font-semibold mb-4">
+              Confirm Cancellation
+            </h2>
+            <p className="text-[#b8836e] mb-6">
+              Are you sure you want to cancel this item?
+            </p>
+            <div className="flex justify-end space-x-4">
+              <button
+                onClick={() => setShowConfirmation(false)}
+                className="px-4 py-2 bg-[#ece3d9] text-[#8b5d4b] rounded hover:bg-[#e8dac8] transition-colors duration-200">
+                No, Keep Item
+              </button>
+              <button
+                onClick={confirmCancellation}
+                className="px-4 py-2 bg-[#955238] text-white rounded hover:bg-[#713d28] transition-colors duration-200">
+                Yes, Cancel Item
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
