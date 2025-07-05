@@ -348,7 +348,7 @@ export default function ProductDetails({ product, isWishList, setreload }) {
 
           {/* Product Description */}
           <div className="mt-10">
-            <p className="text-[#8b5d4b] text-sm lg:text-xs max-[425px]:text-[11px] font-thin leading-relaxed font-Futura-Light">
+            <p className="text-[#895742] text-sm lg:text-xs max-[425px]:text-[11px] font-thin leading-relaxed font-Futura-Light">
               {product.description || ""}
             </p>
           </div>
@@ -357,14 +357,14 @@ export default function ProductDetails({ product, isWishList, setreload }) {
           <div className="mt-8">
             <button
               onClick={() => setToggle(!toggle)}
-              className="text-[#8b5d4b] text-sm lg:text-xs max-[425px]:text-[11px] font-thin leading-relaxed font-Futura-Light flex items-center justify-between w-full">
+              className="text-[#895742] text-sm lg:text-xs max-[425px]:text-[11px] font-thin leading-relaxed font-Futura-Light flex items-center justify-between w-full">
               <span>Product details</span>
               <span className="font-bold text-lg lg:text-base max-[425px]:text-sm">
                 {toggle ? "-" : "+"}
               </span>
             </button>
             {toggle && (
-              <div className="mt-4 text-[#8b5d4b] text-sm lg:text-xs max-[425px]:text-[11px] font-thin leading-relaxed font-Futura-Light">
+              <div className="mt-4 text-[#895742] text-sm lg:text-xs max-[425px]:text-[11px] font-thin leading-relaxed font-Futura-Light">
                 {product.additionalInfo || ""}
               </div>
             )}
