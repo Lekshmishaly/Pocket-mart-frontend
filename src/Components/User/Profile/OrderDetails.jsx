@@ -130,7 +130,9 @@ function OrderDetails() {
           </button>
 
           {/* Download Invoice Button on Right */}
-          <button className="w-full sm:w-fit bg-[#aa6246] px-6 py-2 rounded-lg text-xs sm:text-sm text-[#f4ede3] font-Futura-Light hover:bg-[#8b5d4b]">
+          <button
+            onClick={handleDownloadInvoice}
+            className="w-full sm:w-fit bg-[#aa6246] px-6 py-2 rounded-lg text-xs sm:text-sm text-[#f4ede3] font-Futura-Light hover:bg-[#8b5d4b]">
             Download Invoice
           </button>
         </div>
@@ -138,7 +140,7 @@ function OrderDetails() {
         {/* Order Header */}
         <div className="border-b border-[#8b5d4b]/20 pb-1 mb-4">
           <h1 className="text-[#613220] text-sm sm:text-base font-Futura-Light">
-            Order: {order?.order_id}
+            Order ID: {order?.order_id}
           </h1>
         </div>
 
