@@ -149,13 +149,15 @@ function Account() {
             </div>
           </div>
         ) : (
-          <div className="space-y-2">
-            <p className="text-[#8b5d4b] text-sm sm:text-base font-Futura-Light">
-              {`${userData.firstname} ${userData.lastname}`}
-            </p>
-            <p className="text-[#8b5d4b] text-sm sm:text-base font-Futura-Light">
-              {userData.phone}
-            </p>
+          <div className="space-y-2 text-[#8b5d4b] text-sm sm:text-base font-Futura-Light">
+            {userData?.firstname && userData?.lastname && userData?.phone ? (
+              <>
+                <p>{`${userData.firstname} ${userData.lastname}`}</p>
+                <p>{userData.phone}</p>
+              </>
+            ) : (
+              <p>{userData?.email}</p>
+            )}
           </div>
         )}
 
